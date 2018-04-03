@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sqw-Ax-jIr">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BIG JOHN.otf">
+            <string>BigJohn</string>
+        </array>
+        <array key="Slim Joe.otf">
+            <string>SlimJoe</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="0fF-x5-LDg">
+            <objects>
+                <viewController storyboardIdentifier="CMLaunchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sqw-Ax-jIr" customClass="CMLaunchViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lRO-5A-J7Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRR-hP-yvg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NB3-qz-lm3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Launch Screen" translatesAutoresizingMaskIntoConstraints="NO" id="7WW-Gl-aly">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Xbv-Ax-Fjo" kind="show" identifier="CMLaunchSegue" animates="NO" id="Uza-0L-Wx8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlx-6d-dTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="-432"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="maN-3n-wWn">
+            <objects>
+                <viewController storyboardIdentifier="CMMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xbv-Ax-Fjo" customClass="CMMenuViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wjJ-un-21b"/>
+                        <viewControllerLayoutGuide type="bottom" id="DPj-QB-amx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v8v-DP-7X4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkmate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hv4-G4-5Px">
+                                <rect key="frame" x="20" y="140" width="374" height="58.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sg-F8-ADm" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="360" width="414" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="38"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Endless" backgroundImage="Button Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDown:" destination="Xbv-Ax-Fjo" eventType="touchDown" id="W8R-D1-I5T"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchCancel" id="gjX-sf-rLE"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpOutside" id="kBa-3J-gSX"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="o7C-jA-88u"/>
+                                    <segue destination="fxf-9B-FHh" kind="show" identifier="CMCheckSegue" animates="NO" id="ItC-Id-SbW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-KY-c4N" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="246" width="414" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="38"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Conquest" backgroundImage="Button Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDown:" destination="Xbv-Ax-Fjo" eventType="touchDown" id="bX2-2y-Kxe"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchCancel" id="1on-GM-oMa"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="6lh-85-ZCw"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpOutside" id="XYq-jW-ysy"/>
+                                    <action selector="showAlert:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="KkN-Aa-bXD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game Board Top" translatesAutoresizingMaskIntoConstraints="NO" id="GcE-g4-QlZ">
+                                <rect key="frame" x="-13" y="508" width="440" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LgF-zh-ZsZ">
+                                <rect key="frame" x="0.0" y="529" width="414" height="207"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Aay-N1-5BV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ag-lW-bGc" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="olf-6b-sh1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-zo-Cw2" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="69" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="gWz-kn-DaB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzh-tf-T1J" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="138" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="28c-n9-JZy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jk-8q-o7c" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="y8z-01-Z0H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-eU-gJm" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="276" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="vf7-74-ZsQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sc-ho-UfS" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="345" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="UnZ-LD-uVR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="o1a-7Y-bcz">
+                                        <rect key="frame" x="0.0" y="69" width="414" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1D6-he-Oox" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="X4F-Vc-64W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHw-du-q6L" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="69" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="c1h-BT-39R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRU-gG-lOE" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="138" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="kgZ-Ny-svX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-Mc-moX" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="laW-NC-x2b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-M9-c31" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="276" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="u93-F3-KTc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-TP-bPW" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="345" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="XVK-Bh-3Kf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QnY-yQ-7aC">
+                                        <rect key="frame" x="0.0" y="138" width="414" height="69"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsB-QX-kdz" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="rRy-fe-46R"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1d-kr-S8V" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="69" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="XRJ-kD-xzg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXn-DS-Lfq" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="138" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="bXB-0e-t4x"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-1U-CdT" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="f3y-5I-wHN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFB-i4-6ze" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="276" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="kqb-SA-Gq2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMy-O3-Son" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="345" y="0.0" width="69" height="69"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="X2C-XI-dw9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LgF-zh-ZsZ" secondAttribute="height" multiplier="2:1" id="GRR-Lg-8WJ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-qu-vDW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Logo Bar Blue"/>
+                                <connections>
+                                    <action selector="buttonDown:" destination="Xbv-Ax-Fjo" eventType="touchDown" id="GG6-K1-A5I"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpOutside" id="2i2-HT-XNe"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchUpInside" id="8SZ-SZ-yG3"/>
+                                    <action selector="buttonUp:" destination="Xbv-Ax-Fjo" eventType="touchCancel" id="RgS-bZ-W0b"/>
+                                    <segue destination="JBp-ZI-Pz1" kind="presentation" identifier="CMMenuDropdownSegue" animates="NO" modalPresentationStyle="overCurrentContext" id="g6l-HP-aYl"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7A-zo-bkd" customClass="CMAlertView" customModule="Checkmate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17999483495149324" green="0.17999999999999999" blue="0.17999723199057924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LgF-zh-ZsZ" secondAttribute="trailing" id="RQg-zv-OWc"/>
+                            <constraint firstItem="LgF-zh-ZsZ" firstAttribute="leading" secondItem="v8v-DP-7X4" secondAttribute="leading" id="wGu-XQ-cXr"/>
+                            <constraint firstItem="DPj-QB-amx" firstAttribute="top" secondItem="LgF-zh-ZsZ" secondAttribute="bottom" id="xbP-zD-BbY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o7d-cJ-7Yg"/>
+                    <connections>
+                        <outlet property="conquestButton" destination="dCV-KY-c4N" id="dYw-zv-1bo"/>
+                        <outlet property="endlessButton" destination="8Sg-F8-ADm" id="XR3-Gw-Ypy"/>
+                        <outlet property="gameBoardStack" destination="LgF-zh-ZsZ" id="Kv3-BU-gru"/>
+                        <outlet property="menuAlert" destination="f7A-zo-bkd" id="IgY-yh-Ieb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DxN-rg-zaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3156.521739130435" y="-432.06521739130437"/>
+        </scene>
+        <!--Check View Controller-->
+        <scene sceneID="r0h-fZ-GJC">
+            <objects>
+                <viewController storyboardIdentifier="CMCheckViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fxf-9B-FHh" customClass="CMCheckViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1M9-cO-H9s"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rjr-th-rRL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dSX-dy-Q9e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PUL-ke-IP0">
+                                <rect key="frame" x="20" y="144" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Piece" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yUg-Cx-3tp">
+                                <rect key="frame" x="20" y="394" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNd-39-p7Z" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="640" width="414" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="40"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Check" backgroundImage="Button Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDown:" destination="fxf-9B-FHh" eventType="touchDown" id="Vzc-tC-ehg"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchUpOutside" id="DRL-hV-Oxb"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchCancel" id="iq2-wF-CJz"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchUpInside" id="pqT-EI-j5v"/>
+                                    <segue destination="g6Q-ZH-JgG" kind="show" identifier="CMGameSegue" animates="NO" id="eqj-Uf-KrH"/>
+                                </connections>
+                            </button>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2f-sL-TJt">
+                                <rect key="frame" x="57" y="220" width="300" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuN-a2-OMy">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Blue"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="6Wm-XE-ze1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-Ex-YvV">
+                                        <rect key="frame" x="400" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Red"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="uHv-5T-bWw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WS6-ut-4uA">
+                                        <rect key="frame" x="700" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Green"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="pTa-ng-pcq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yV-kW-YkO">
+                                        <rect key="frame" x="1000" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Purple"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="t2D-LJ-5Bz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-HL-0Dy">
+                                        <rect key="frame" x="1300" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Yellow"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="hPL-4Q-F3x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-jb-lNF">
+                                        <rect key="frame" x="1600" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag White"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="M4e-dL-txx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-gw-8Rb">
+                                        <rect key="frame" x="1900" y="0.0" width="100" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Flag Black"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="W6P-g8-TXb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMg-GT-pTQ">
+                                <rect key="frame" x="57" y="460" width="300" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOT-9n-AaZ">
+                                        <rect key="frame" x="85" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Piece Pawn Blue Token"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="q5i-O1-Otv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XG-tA-9EO">
+                                        <rect key="frame" x="385" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Piece Knight Blue Token"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="w8e-WX-wZc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOt-9s-U5Z">
+                                        <rect key="frame" x="685" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Piece Bishop Blue Token"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="Fgq-PW-Gtz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Raj-pW-5op">
+                                        <rect key="frame" x="985" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Piece Rook Blue Token"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="uli-81-8jA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bm-n8-A0A">
+                                        <rect key="frame" x="1285" y="0.0" width="130" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Piece Queen Blue Token"/>
+                                        <connections>
+                                            <action selector="unlockablePressed:" destination="fxf-9B-FHh" eventType="touchUpInside" id="Lu8-na-sUt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UI-o6-TvM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Logo Bar Blue"/>
+                                <connections>
+                                    <action selector="buttonDown:" destination="fxf-9B-FHh" eventType="touchDown" id="uxg-QS-MaA"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchUpOutside" id="Aa9-Go-uyM"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchUpInside" id="CPH-P9-gpC"/>
+                                    <action selector="buttonUp:" destination="fxf-9B-FHh" eventType="touchCancel" id="LXu-L3-D9a"/>
+                                    <segue destination="JBp-ZI-Pz1" kind="presentation" identifier="CMCheckDropdownSegue" animates="NO" modalPresentationStyle="overCurrentContext" id="k83-a2-Lfd"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5e-QB-rNR" customClass="CMUnlockView" customModule="Checkmate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18036800622940063" green="0.18040603399276733" blue="0.18036559224128723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="checkButton" destination="lNd-39-p7Z" id="eBh-Gz-VFD"/>
+                        <outlet property="flagScrollView" destination="l2f-sL-TJt" id="6GI-QY-M9R"/>
+                        <outlet property="pieceScrollView" destination="rMg-GT-pTQ" id="hgr-Mo-qho"/>
+                        <outlet property="unlockAlert" destination="H5e-QB-rNR" id="517-wP-uGa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSi-mi-TZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4063.7681159420295" y="-432.06521739130437"/>
+        </scene>
+        <!--Dropdown View Controller-->
+        <scene sceneID="uWB-hu-i9Q">
+            <objects>
+                <viewController storyboardIdentifier="CMDropdownViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JBp-ZI-Pz1" customClass="CMDropdownViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mzv-2c-3dw"/>
+                        <viewControllerLayoutGuide type="bottom" id="aBo-94-UEQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ak7-V2-GMt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fW-Hx-KqQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkmate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-xi-eHG">
+                                <rect key="frame" x="20" y="100" width="374" height="58.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5wW-Ft-45V">
+                                <rect key="frame" x="0.0" y="200" width="414" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21D-AM-kSJ">
+                                        <rect key="frame" x="0.0" y="452" width="414" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Logo Bar Blue"/>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="NYA-TI-Fe1"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="5NJ-dl-amC"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="EBC-z1-3mp"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="W43-fQ-SpC"/>
+                                            <action selector="dismissDropdown:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="tnB-Um-tXE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-S1-ujT" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="106" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="32"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sound: On" backgroundImage="Button White">
+                                            <color key="titleColor" red="0.18036800622940063" green="0.18040603399276733" blue="0.18036559224128723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="fHu-Jm-pNh"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="EtL-Xf-WHj"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="fu2-tC-egJ"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="uuF-oy-5ku"/>
+                                            <action selector="triggerButton:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="VNY-ej-tPD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQ8-fZ-PeJ" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="32"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Leaderboard" backgroundImage="Button White">
+                                            <color key="titleColor" red="0.18036800622940063" green="0.18040603399276733" blue="0.18036559224128723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="fz6-mx-by8"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="5RA-OG-CVs"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="QVy-pA-yOy"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="y97-eY-RGb"/>
+                                            <action selector="triggerButton:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="Uaq-au-3T2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bj4-vT-oRD" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="318" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="32"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Restore" backgroundImage="Button White">
+                                            <color key="titleColor" red="0.18036800619999999" green="0.18040603399999999" blue="0.18036559220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="1dL-6h-aoF"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="Ims-Qc-TpC"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="Yas-jA-FxN"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="nHy-Oa-VWb"/>
+                                            <action selector="triggerButton:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="baM-uH-wxe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-WE-PRl" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="212" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="32"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tips" backgroundImage="Button White">
+                                            <color key="titleColor" red="0.18036800619999999" green="0.18040603399999999" blue="0.18036559220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="0gG-3P-AEO"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="6ry-va-7TW"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="P9p-aK-tvx"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="nMJ-tz-Wug"/>
+                                            <action selector="triggerButton:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="FT4-0b-7F2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbQ-me-H8G" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                        <rect key="frame" x="414" y="448" width="414" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.68235294120000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="32"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Back" backgroundImage="Button White">
+                                            <color key="titleColor" red="0.18036800619999999" green="0.18040603399999999" blue="0.18036559220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonDown:" destination="JBp-ZI-Pz1" eventType="touchDown" id="ObT-tM-rUd"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchCancel" id="Dso-bm-zwV"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpOutside" id="McU-CT-LQd"/>
+                                            <action selector="buttonUp:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="Nwf-Ii-6BK"/>
+                                            <action selector="triggerButton:" destination="JBp-ZI-Pz1" eventType="touchUpInside" id="eKP-QU-zdf"/>
+                                        </connections>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t8-DR-YYr">
+                                        <rect key="frame" x="414" y="0.0" width="414" height="384"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tip Card Pawn" translatesAutoresizingMaskIntoConstraints="NO" id="TtF-aa-18E">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="384"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tip Card Knight" translatesAutoresizingMaskIntoConstraints="NO" id="MFV-K9-KJR">
+                                                <rect key="frame" x="434" y="0.0" width="374" height="384"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tip Card Bishop" translatesAutoresizingMaskIntoConstraints="NO" id="hu7-iv-S6j">
+                                                <rect key="frame" x="848" y="0.0" width="374" height="384"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tip Card Rook" translatesAutoresizingMaskIntoConstraints="NO" id="4Au-Yd-08I">
+                                                <rect key="frame" x="1262" y="0.0" width="374" height="384"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tip Card Queen" translatesAutoresizingMaskIntoConstraints="NO" id="F9D-gN-aAj">
+                                                <rect key="frame" x="1676" y="0.0" width="374" height="384"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="xoL-b4-ohm">
+                                        <rect key="frame" x="571" y="403" width="100" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="UQ8-fZ-PeJ" id="cHz-rc-ykG"/>
+                        <outlet property="button2" destination="8Sc-S1-ujT" id="oYO-8J-Vgs"/>
+                        <outlet property="button3" destination="Ymn-WE-PRl" id="ONv-yO-kr6"/>
+                        <outlet property="button4" destination="Bj4-vT-oRD" id="y0K-kX-kNg"/>
+                        <outlet property="dropdownBackground" destination="2fW-Hx-KqQ" id="Ugl-oO-7eI"/>
+                        <outlet property="dropdownButton" destination="21D-AM-kSJ" id="m8e-o1-4g2"/>
+                        <outlet property="dropdownScrollView" destination="5wW-Ft-45V" id="rmZ-Sh-IvR"/>
+                        <outlet property="tipCardPageControl" destination="xoL-b4-ohm" id="QPu-9Z-QbA"/>
+                        <outlet property="tipCardScrollView" destination="0t8-DR-YYr" id="1Xg-MB-VzF"/>
+                        <outlet property="titleLabel" destination="G0x-xi-eHG" id="k7J-Y1-Vub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53d-gL-xlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5005.7971014492759" y="-432.06521739130437"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="CE8-t9-Jjd">
+            <objects>
+                <viewController storyboardIdentifier="CMGameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g6Q-ZH-JgG" customClass="CMGameViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xqb-h9-FKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="jTG-TQ-2Kk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jKy-BB-YYq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkmate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="avF-Rs-G9S">
+                                <rect key="frame" x="20" y="108" width="374" height="58.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="374" translatesAutoresizingMaskIntoConstraints="NO" id="elg-i6-GXI">
+                                <rect key="frame" x="20" y="646" width="374" height="58.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BigJohn" family="Big John" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game Board Top" translatesAutoresizingMaskIntoConstraints="NO" id="psy-mk-Yhi">
+                                <rect key="frame" x="0.0" y="180" width="414" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qNx-pr-CMG">
+                                <rect key="frame" x="12" y="200" width="390" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yS3-aB-ofT">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRt-Q6-aSp" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="hsn-oU-foD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdG-Xo-sFQ" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="nKi-lK-o7s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INc-0m-HzO" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="LSZ-Uz-WKU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-ui-Gug" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="73o-aF-4fO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj5-4F-99B" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="FyD-Np-uZF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owz-YQ-6wO" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="YTI-PB-Tld"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6do-Iv-ZXS">
+                                        <rect key="frame" x="0.0" y="65" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqY-G2-NrS" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="oIJ-hb-OXS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hw-qV-n1A" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="dnP-gI-Q22"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEY-Er-l8P" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="ldx-MC-40M"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQg-zH-7aw" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="oMO-wv-3m5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-WL-csD" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="y68-b4-RqM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-qr-ApT" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="wiY-0e-y5H"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VBA-9P-Avr">
+                                        <rect key="frame" x="0.0" y="130" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcS-Zf-39T" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="etZ-Wi-BDj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-sm-6D3" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="3kq-Pf-Qh7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nO9-Pg-qfe" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="bqV-XG-ZBE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-c2-WMj" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="ngc-1o-Oeh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-9x-xn1" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="qur-W0-TxJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSR-88-h2b" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="tRy-2p-kNW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EGh-O8-kIb">
+                                        <rect key="frame" x="0.0" y="195" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-4I-dK7" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="sag-Tw-VtO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGe-Rg-ID9" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="enC-tZ-PY5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqW-OU-h3N" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="JK1-r9-CDB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67M-vZ-hPL" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="1lt-WP-Xa2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbn-8J-WwX" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="wIn-Um-jSF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-yn-F2b" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="fGw-AT-9Vw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xt3-W3-8kH">
+                                        <rect key="frame" x="0.0" y="260" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAR-l5-w6X" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="Oze-kp-SKH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-eg-XKp" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="Edy-lA-75b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyL-0T-dF7" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="aSH-Px-dGQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aH-s2-B0v" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="RvF-ZD-4E7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysg-FN-PsS" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="V4C-HV-lGs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-XO-Lg6" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="Itd-TT-9FI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-LT-E5j">
+                                        <rect key="frame" x="0.0" y="325" width="390" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12B-vZ-IMN" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Pawn Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="RgJ-si-lpM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIf-lV-mCj" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="65" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Bishop Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="H5m-4u-Zp0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFb-ZQ-VZI" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="130" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Rook Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="QWk-tS-RIB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaz-c7-8is" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="195" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Knight Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="8Sc-fn-veh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khd-0a-tEp" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="260" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Queen Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="OJ2-1V-EkF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7Z-Gi-CKk" customClass="CMGameSquare" customModule="Checkmate" customModuleProvider="target">
+                                                <rect key="frame" x="325" y="0.0" width="65" height="65"/>
+                                                <state key="normal" backgroundImage="Piece Pawn Blue"/>
+                                                <connections>
+                                                    <action selector="squareTouched:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="c3e-CS-5TR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Game Board Bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qru-P9-T7R">
+                                <rect key="frame" x="0.0" y="395" width="414" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flag Blue" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-kC-aN3">
+                                <rect key="frame" x="40" y="638" width="60" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flag Red" translatesAutoresizingMaskIntoConstraints="NO" id="WeW-Fg-5LQ">
+                                <rect key="frame" x="314" y="638" width="60" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkN-69-tii">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Logo Bar Blue"/>
+                                <connections>
+                                    <action selector="buttonDown:" destination="g6Q-ZH-JgG" eventType="touchDown" id="XUi-Ct-9S9"/>
+                                    <action selector="buttonUp:" destination="g6Q-ZH-JgG" eventType="touchCancel" id="WAN-Cf-G8N"/>
+                                    <action selector="buttonUp:" destination="g6Q-ZH-JgG" eventType="touchUpInside" id="k5y-av-CGf"/>
+                                    <action selector="buttonUp:" destination="g6Q-ZH-JgG" eventType="touchUpOutside" id="mSb-RU-dBA"/>
+                                    <segue destination="JBp-ZI-Pz1" kind="presentation" identifier="CMGameDropdownSegue" animates="NO" modalPresentationStyle="overCurrentContext" id="FMd-b9-K0O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17999487914608961" green="0.17999999999999999" blue="0.17999726695999166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KwJ-qx-AYV"/>
+                    <connections>
+                        <outlet property="computerFlag" destination="WeW-Fg-5LQ" id="XoQ-vA-q0O"/>
+                        <outlet property="gameBoardStack" destination="qNx-pr-CMG" id="tHg-TI-Pup"/>
+                        <outlet property="scoreLabel" destination="elg-i6-GXI" id="SMx-0z-GeH"/>
+                        <outlet property="titleLabel" destination="avF-Rs-G9S" id="IJZ-be-zIt"/>
+                        <outlet property="userFlag" destination="T0m-kC-aN3" id="UWO-Ae-P07"/>
+                        <segue destination="66a-t7-DPD" kind="presentation" identifier="CMCheckmateSegue" modalPresentationStyle="overCurrentContext" id="sSW-Zz-3RU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IV9-cV-QBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="318"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="jfQ-bJ-onH">
+            <objects>
+                <viewController storyboardIdentifier="CMLoadingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wNb-nm-3Sb" customClass="CMLoadingViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uGz-Vo-kcx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ite-W5-CeZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RPH-pj-cz9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Load Screen Blue" translatesAutoresizingMaskIntoConstraints="NO" id="Fbt-2G-Otv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.81309241060000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadScreen" destination="Fbt-2G-Otv" id="gZv-J1-gIu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nqx-UQ-M7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5007" y="318"/>
+        </scene>
+        <!--Checkmate View Controller-->
+        <scene sceneID="jYU-nU-Jvw">
+            <objects>
+                <viewController storyboardIdentifier="CMCheckmateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="66a-t7-DPD" customClass="CMCheckmateViewController" customModule="Checkmate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W8o-vJ-41g"/>
+                        <viewControllerLayoutGuide type="bottom" id="6DF-oD-mWG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yni-m2-l3a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ch-JK-rhl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="dfU-uI-Sgs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Checkmate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EdT-SY-JIx">
+                                            <rect key="frame" x="20" y="100" width="374" height="92"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="52"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DxU-XG-VIF">
+                                            <rect key="frame" x="20" y="226" width="374" height="52"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="36"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-Ih-TzJ">
+                                            <rect key="frame" x="20" y="272" width="374" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1g2-iu-ZSr">
+                                            <rect key="frame" x="0.0" y="351" width="414" height="96"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65j-Yo-JiE">
+                                            <rect key="frame" x="0.0" y="449" width="414" height="96"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-0N-Jce">
+                                            <rect key="frame" x="0.0" y="547" width="414" height="96"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNy-w4-4aS">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="rdc-XZ-Arm">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-Ig-U9C">
+                                                        <rect key="frame" x="0.0" y="351" width="414" height="96"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="40"/>
+                                                        <inset key="titleEdgeInsets" minX="20" minY="8" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Play Again"/>
+                                                        <connections>
+                                                            <segue destination="wNb-nm-3Sb" kind="show" identifier="CMLoadGameSegue" animates="NO" id="WYJ-rN-Dpw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJy-Q8-FJS">
+                                                        <rect key="frame" x="0.0" y="449" width="414" height="96"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="40"/>
+                                                        <inset key="titleEdgeInsets" minX="20" minY="8" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Menu"/>
+                                                        <connections>
+                                                            <segue destination="wNb-nm-3Sb" kind="show" identifier="CMLoadMenuSegue" animates="NO" id="hhE-lP-H2w"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-Xy-EvM" customClass="CMButton" customModule="Checkmate" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="547" width="414" height="96"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="SlimJoe" family="Slim Joe" pointSize="40"/>
+                                                        <inset key="titleEdgeInsets" minX="20" minY="8" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Leaderboard"/>
+                                                        <connections>
+                                                            <action selector="showLeaderboard:" destination="66a-t7-DPD" eventType="touchUpInside" id="43J-ZQ-N6U"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="bestLabel" destination="vvf-Ih-TzJ" id="mEv-No-A17"/>
+                        <outlet property="leaderboardButton" destination="gfi-Xy-EvM" id="AfI-h1-H8E"/>
+                        <outlet property="menuButton" destination="TJy-Q8-FJS" id="gbs-Ks-VVs"/>
+                        <outlet property="playagainButton" destination="5kh-Ig-U9C" id="v8l-OQ-Lnb"/>
+                        <outlet property="scoreLabel" destination="DxU-XG-VIF" id="BWB-D3-tIN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5L-iW-bFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4063.7681159420295" y="317.93478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button Blue" width="414" height="96"/>
+        <image name="Button White" width="414" height="96"/>
+        <image name="Flag Black" width="60" height="66"/>
+        <image name="Flag Blue" width="120" height="132"/>
+        <image name="Flag Green" width="120" height="132"/>
+        <image name="Flag Purple" width="120" height="132"/>
+        <image name="Flag Red" width="120" height="132"/>
+        <image name="Flag White" width="120" height="132"/>
+        <image name="Flag Yellow" width="120" height="132"/>
+        <image name="Game Board Bottom" width="414" height="215"/>
+        <image name="Game Board Top" width="414" height="215"/>
+        <image name="Launch Screen" width="414" height="736"/>
+        <image name="Load Screen Blue" width="414" height="736"/>
+        <image name="Logo Bar Blue" width="414" height="84"/>
+        <image name="Piece Bishop Blue" width="65" height="65"/>
+        <image name="Piece Bishop Blue Token" width="130" height="130"/>
+        <image name="Piece Knight Blue" width="65" height="65"/>
+        <image name="Piece Knight Blue Token" width="130" height="130"/>
+        <image name="Piece Pawn Blue" width="65" height="65"/>
+        <image name="Piece Pawn Blue Token" width="130" height="130"/>
+        <image name="Piece Queen Blue" width="65" height="65"/>
+        <image name="Piece Queen Blue Token" width="130" height="130"/>
+        <image name="Piece Rook Blue" width="65" height="65"/>
+        <image name="Piece Rook Blue Token" width="130" height="130"/>
+        <image name="Tip Card Bishop" width="374" height="382"/>
+        <image name="Tip Card Knight" width="374" height="382"/>
+        <image name="Tip Card Pawn" width="374" height="382"/>
+        <image name="Tip Card Queen" width="374" height="382"/>
+        <image name="Tip Card Rook" width="374" height="382"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="k83-a2-Lfd"/>
+        <segue reference="WYJ-rN-Dpw"/>
+    </inferredMetricsTieBreakers>
+</document>
